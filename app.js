@@ -23,13 +23,13 @@ const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 // オンライン/オフライン状態を監視
 function updateOnlineStatus() {
     if (navigator.onLine) {
-        offlineStatus.textContent = 'Online';
+        offlineStatus.textContent = 'オンライン';
         offlineStatus.className = 'offline-status online';
         setTimeout(() => {
             offlineStatus.className = 'offline-status';
         }, 2000);
     } else {
-        offlineStatus.textContent = 'Offline Mode';
+        offlineStatus.textContent = 'オフラインモード';
         offlineStatus.className = 'offline-status offline';
     }
 }
@@ -102,7 +102,7 @@ function selectUSVoice(voices) {
 // Text-to-Speech で発音する（アメリカ英語）
 async function speakWord(word) {
     if (!('speechSynthesis' in window)) {
-        voiceStatus.textContent = 'Speech not supported';
+        voiceStatus.textContent = '音声合成がサポートされていません';
         setTimeout(() => voiceStatus.textContent = '', 2000);
         return;
     }
@@ -171,7 +171,7 @@ function initSpeechRecognition() {
         recognition.onstart = () => {
             isListening = true;
             voiceBtn.classList.add('listening');
-            voiceStatus.textContent = 'Listening... Speak a word';
+            voiceStatus.textContent = '聞いています... 単語を話してください';
         };
 
         recognition.onresult = (event) => {
@@ -179,7 +179,7 @@ function initSpeechRecognition() {
             wordInput.value = transcript;
 
             if (event.results[0].isFinal) {
-                voiceStatus.textContent = `Recognized: "${transcript}"`;
+                voiceStatus.textContent = `認識: "${transcript}"`;
                 setTimeout(() => {
                     searchWord(transcript.trim());
                     voiceStatus.textContent = '';
@@ -201,7 +201,7 @@ function initSpeechRecognition() {
         };
 
         recognition.onnomatch = () => {
-            voiceStatus.textContent = 'Could not recognize. Try again.';
+            voiceStatus.textContent = '認識できませんでした。もう一度お試しください。';
             stopListening();
             setTimeout(() => voiceStatus.textContent = '', 3000);
         };
@@ -223,15 +223,15 @@ function updateVoiceButtonState(supported) {
 
 function getErrorMessage(error) {
     const messages = {
-        'no-speech': 'No speech detected. Try again.',
-        'audio-capture': 'Microphone not found.',
-        'not-allowed': 'Microphone access denied. Please allow in Settings.',
-        'network': 'Network error. Voice needs internet.',
-        'aborted': 'Voice input stopped.',
-        'service-not-allowed': 'Speech service not available.',
-        'language-not-supported': 'Language not supported.'
+        'no-speech': '音声が検出されませんでした。もう一度お試しください。',
+        'audio-capture': 'マイクが見つかりません。',
+        'not-allowed': 'マイクへのアクセスが拒否されました。設定で許可してください。',
+        'network': 'ネットワークエラー。音声入力にはインターネットが必要です。',
+        'aborted': '音声入力が中断されました。',
+        'service-not-allowed': '音声サービスが利用できません。',
+        'language-not-supported': '言語がサポートされていません。'
     };
-    return messages[error] || 'Voice error. Try typing instead.';
+    return messages[error] || '音声エラー。入力して検索してください。';
 }
 
 function stopListening() {
@@ -242,7 +242,7 @@ function stopListening() {
 function startListening() {
     // HTTPSチェック（localhost以外）
     if (location.protocol !== 'https:' && location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
-        voiceStatus.textContent = 'Voice requires HTTPS connection';
+        voiceStatus.textContent = '音声入力にはHTTPS接続が必要です';
         setTimeout(() => voiceStatus.textContent = '', 3000);
         return;
     }
@@ -250,8 +250,8 @@ function startListening() {
     if (!recognition) {
         if (!initSpeechRecognition()) {
             voiceStatus.textContent = isIOS ?
-                'Voice not supported on this iOS version' :
-                'Voice not supported. Please type.';
+                'このiOSバージョンでは音声入力がサポートされていません' :
+                '音声入力がサポートされていません。入力してください。';
             setTimeout(() => voiceStatus.textContent = '', 3000);
             return;
         }
@@ -278,12 +278,12 @@ function startListening() {
                 try {
                     recognition.start();
                 } catch (retryError) {
-                    voiceStatus.textContent = 'Could not start voice. Try again.';
+                    voiceStatus.textContent = '音声入力を開始できませんでした。もう一度お試しください。';
                     setTimeout(() => voiceStatus.textContent = '', 3000);
                 }
             }, 200);
         } else {
-            voiceStatus.textContent = 'Could not start voice. Try typing.';
+            voiceStatus.textContent = '音声入力を開始できませんでした。入力してください。';
             setTimeout(() => voiceStatus.textContent = '', 3000);
         }
     }
@@ -337,7 +337,7 @@ async function searchWord(word) {
     const cleanWord = word.toLowerCase().trim().split(' ')[0].replace(/[^a-z'-]/g, '');
 
     if (!cleanWord) {
-        showError('Please enter a valid English word');
+        showError('有効な英単語を入力してください');
         return;
     }
 
@@ -355,9 +355,9 @@ async function searchWord(word) {
 
             if (!response.ok) {
                 if (response.status === 404) {
-                    showError(`"${cleanWord}" was not found`);
+                    showError(`"${cleanWord}" は見つかりませんでした`);
                 } else {
-                    showError('Search error occurred');
+                    showError('検索エラーが発生しました');
                 }
                 return;
             }
@@ -366,11 +366,11 @@ async function searchWord(word) {
             displayResult(data[0], false);
         } catch (error) {
             console.error('Fetch error:', error);
-            showError('Network error. Try a common word offline.');
+            showError('ネットワークエラー。オフライン辞書の単語をお試しください。');
         }
     } else {
         // オフラインで辞書にない場合
-        showError(`"${cleanWord}" is not in offline dictionary. Try common words like: hello, good, happy, love, thank`);
+        showError(`"${cleanWord}" はオフライン辞書にありません。例: hello, good, happy, love, thank`);
     }
 }
 
@@ -379,7 +379,7 @@ function showLoading() {
     resultDiv.innerHTML = `
         <div class="loading">
             <div class="spinner"></div>
-            <p>Searching...</p>
+            <p>検索中...</p>
         </div>
     `;
 }
@@ -420,13 +420,13 @@ function displayResult(data, isOffline) {
                 <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
                 <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
             </svg>
-            Speak
+            発音
         </button>
     `;
 
     // オフラインバッジ
     if (isOffline) {
-        html += '<span style="background: rgba(251,191,36,0.2); color: #fbbf24; padding: 4px 10px; border-radius: 12px; font-size: 0.75rem;">Offline</span>';
+        html += '<span style="background: rgba(251,191,36,0.2); color: #fbbf24; padding: 4px 10px; border-radius: 12px; font-size: 0.75rem;">オフライン</span>';
     }
 
     html += '</div>';
@@ -493,7 +493,7 @@ if (isSpeechRecognitionSupported()) {
 } else {
     updateVoiceButtonState(false);
     if (isIOS) {
-        voiceStatus.textContent = 'Voice input requires iOS 14.5+';
+        voiceStatus.textContent = '音声入力にはiOS 14.5以降が必要です';
         setTimeout(() => voiceStatus.textContent = '', 5000);
     }
 }

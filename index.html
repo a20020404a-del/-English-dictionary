@@ -7,7 +7,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#0f172a">
-    <title>English Dictionary</title>
+    <title>英語辞書</title>
     <link rel="stylesheet" href="style.css">
     <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%236366f1' width='100' height='100' rx='20'/><text x='50' y='70' text-anchor='middle' fill='white' font-size='60'>📖</text></svg>">
 </head>
@@ -21,9 +21,9 @@
                     <line x1="8" y1="7" x2="16" y2="7"/>
                     <line x1="8" y1="11" x2="14" y2="11"/>
                 </svg>
-                <h1>English Dictionary</h1>
+                <h1>英語辞書</h1>
             </div>
-            <p class="tagline">Speak or type to search</p>
+            <p class="tagline">音声または入力で検索</p>
             <div id="offlineStatus" class="offline-status"></div>
         </header>
 
@@ -34,8 +34,8 @@
                         <circle cx="11" cy="11" r="8"/>
                         <path d="m21 21-4.35-4.35"/>
                     </svg>
-                    <input type="text" id="wordInput" placeholder="Search for a word..." autocomplete="off" spellcheck="false">
-                    <button id="clearBtn" class="clear-btn" title="Clear">
+                    <input type="text" id="wordInput" placeholder="英単語を入力..." autocomplete="off" spellcheck="false">
+                    <button id="clearBtn" class="clear-btn" title="クリア">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <line x1="18" y1="6" x2="6" y2="18"/>
                             <line x1="6" y1="6" x2="18" y2="18"/>
@@ -43,14 +43,14 @@
                     </button>
                 </div>
 
-                <button id="searchBtn" class="search-btn" title="Search">
+                <button id="searchBtn" class="search-btn" title="検索">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <circle cx="11" cy="11" r="8"/>
                         <path d="m21 21-4.35-4.35"/>
                     </svg>
                 </button>
 
-                <button id="voiceBtn" class="voice-btn" title="Voice input">
+                <button id="voiceBtn" class="voice-btn" title="音声入力">
                     <svg class="mic-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
                         <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
@@ -71,14 +71,14 @@
                         <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
                         <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
                     </svg>
-                    <p>Enter a word to see its definition</p>
-                    <span class="hint">Try: "hello", "beautiful", "happy"</span>
+                    <p>単語を入力して意味を調べよう</p>
+                    <span class="hint">例: "hello", "beautiful", "happy"</span>
                 </div>
             </div>
         </main>
 
         <footer class="footer">
-            <p>Works offline with 150+ common words</p>
+            <p>オフラインでも150以上の単語が使えます</p>
         </footer>
     </div>
 
