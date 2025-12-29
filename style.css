@@ -366,6 +366,25 @@ h1 {
     height: 16px;
 }
 
+/* Japanese Translation (Main) */
+.japanese-main {
+    font-size: 1.3rem;
+    color: #fbbf24;
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    background: rgba(251, 191, 36, 0.1);
+    border-radius: var(--radius-sm);
+    border-left: 3px solid #fbbf24;
+}
+
+/* Japanese Translation (Definition) */
+.definition-japanese {
+    color: #22c55e;
+    font-size: 0.95rem;
+    margin-top: 8px;
+    padding-left: 32px;
+}
+
 /* Meaning Section */
 .meaning-section {
     margin-bottom: 24px;

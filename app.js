@@ -305,6 +305,11 @@ function displayResult(data, isOffline) {
 
     html += '</div>';
 
+    // 日本語訳（メイン）
+    if (data.japanese) {
+        html += `<div class="japanese-main">${data.japanese}</div>`;
+    }
+
     // 意味を表示
     data.meanings.forEach(meaning => {
         html += '<div class="meaning-section">';
@@ -313,6 +318,10 @@ function displayResult(data, isOffline) {
         meaning.definitions.slice(0, 3).forEach((def, index) => {
             html += '<div class="definition">';
             html += `<p class="definition-text"><span class="definition-number">${index + 1}</span>${def.definition}</p>`;
+            // 日本語訳（定義ごと）
+            if (def.japanese) {
+                html += `<p class="definition-japanese">→ ${def.japanese}</p>`;
+            }
             if (def.example) {
                 html += `<p class="example">"${def.example}"</p>`;
             }
