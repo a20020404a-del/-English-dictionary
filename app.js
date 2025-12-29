@@ -11,6 +11,10 @@ const offlineStatus = document.getElementById('offlineStatus');
 let recognition = null;
 let isListening = false;
 
+// 音声合成用の変数
+let voicesLoaded = false;
+let availableVoices = [];
+
 // オンライン/オフライン状態を監視
 function updateOnlineStatus() {
     if (navigator.onLine) {
@@ -33,53 +37,89 @@ if (!navigator.onLine) {
     updateOnlineStatus();
 }
 
-// Text-to-Speech で発音する（アメリカ英語）
-function speakWord(word) {
-    if ('speechSynthesis' in window) {
-        // 既存の発話をキャンセル
-        speechSynthesis.cancel();
-
-        const utterance = new SpeechSynthesisUtterance(word);
-        utterance.lang = 'en-US';
-        utterance.rate = 0.85;
-        utterance.pitch = 1;
-
-        // アメリカ英語の音声を優先的に探す
-        const voices = speechSynthesis.getVoices();
-
-        // 優先順位: en-US > en_US > en（アメリカ英語を優先）
-        let selectedVoice = voices.find(v => v.lang === 'en-US');
-        if (!selectedVoice) {
-            selectedVoice = voices.find(v => v.lang === 'en_US');
+// 音声リストを読み込む
+function loadVoices() {
+    return new Promise((resolve) => {
+        availableVoices = speechSynthesis.getVoices();
+        if (availableVoices.length > 0) {
+            voicesLoaded = true;
+            resolve(availableVoices);
+        } else {
+            // 音声が非同期で読み込まれる場合
+            speechSynthesis.onvoiceschanged = () => {
+                availableVoices = speechSynthesis.getVoices();
+                voicesLoaded = true;
+                resolve(availableVoices);
+            };
+            // タイムアウト: 1秒後に強制的に続行
+            setTimeout(() => {
+                availableVoices = speechSynthesis.getVoices();
+                voicesLoaded = true;
+                resolve(availableVoices);
+            }, 1000);
         }
-        if (!selectedVoice) {
-            selectedVoice = voices.find(v => v.lang.startsWith('en-US'));
-        }
-        if (!selectedVoice) {
-            // Samantha (macOS) や Google US English などを探す
-            selectedVoice = voices.find(v =>
-                v.name.includes('Samantha') ||
-                v.name.includes('US') ||
-                v.name.includes('American')
-            );
-        }
-        if (!selectedVoice) {
-            selectedVoice = voices.find(v => v.lang.startsWith('en'));
-        }
-
-        if (selectedVoice) {
-            utterance.voice = selectedVoice;
-        }
-
-        speechSynthesis.speak(utterance);
-    }
+    });
 }
 
-// 音声リストが読み込まれたら再取得
+// アメリカ英語の音声を選択
+function selectUSVoice(voices) {
+    // 優先順位: en-US > en_US > en（アメリカ英語を優先）
+    let selectedVoice = voices.find(v => v.lang === 'en-US');
+    if (!selectedVoice) {
+        selectedVoice = voices.find(v => v.lang === 'en_US');
+    }
+    if (!selectedVoice) {
+        selectedVoice = voices.find(v => v.lang.startsWith('en-US'));
+    }
+    if (!selectedVoice) {
+        // Samantha (macOS) や Google US English などを探す
+        selectedVoice = voices.find(v =>
+            v.name.includes('Samantha') ||
+            v.name.includes('US') ||
+            v.name.includes('American')
+        );
+    }
+    if (!selectedVoice) {
+        selectedVoice = voices.find(v => v.lang.startsWith('en'));
+    }
+    return selectedVoice;
+}
+
+// Text-to-Speech で発音する（アメリカ英語）
+async function speakWord(word) {
+    if (!('speechSynthesis' in window)) {
+        console.log('Speech synthesis not supported');
+        return;
+    }
+
+    // 既存の発話をキャンセル
+    speechSynthesis.cancel();
+
+    // 音声がまだ読み込まれていない場合は待つ
+    if (!voicesLoaded || availableVoices.length === 0) {
+        await loadVoices();
+    }
+
+    const utterance = new SpeechSynthesisUtterance(word);
+    utterance.lang = 'en-US';
+    utterance.rate = 0.85;
+    utterance.pitch = 1;
+
+    // 音声を選択
+    const selectedVoice = selectUSVoice(availableVoices);
+    if (selectedVoice) {
+        utterance.voice = selectedVoice;
+    }
+
+    // iOS Safari対策: 少し遅延を入れる
+    setTimeout(() => {
+        speechSynthesis.speak(utterance);
+    }, 100);
+}
+
+// ページ読み込み時に音声を事前読み込み
 if ('speechSynthesis' in window) {
-    speechSynthesis.onvoiceschanged = () => {
-        speechSynthesis.getVoices();
-    };
+    loadVoices();
 }
 
 // Web Speech APIのサポートチェックと初期化
