@@ -2252,5 +2252,2162 @@ const OFFLINE_DICTIONARY = {
         ]
       }
     ]
+  },
+  "about": {
+    word: "about",
+    phonetic: "/əˈbaʊt/",
+    japanese: "約、〜について",
+    meanings: [
+      { partOfSpeech: "preposition", definitions: [{ definition: "Concerning or regarding.", example: "Tell me about yourself.", japanese: "〜に関して" }] }
+    ]
+  },
+  "after": {
+    word: "after",
+    phonetic: "/ˈæftər/",
+    japanese: "〜の後に",
+    meanings: [
+      { partOfSpeech: "preposition", definitions: [{ definition: "Following in time.", example: "After dinner, we watched TV.", japanese: "時間的に後に" }] }
+    ]
+  },
+  "before": {
+    word: "before",
+    phonetic: "/bɪˈfɔːr/",
+    japanese: "〜の前に",
+    meanings: [
+      { partOfSpeech: "preposition", definitions: [{ definition: "Earlier than.", example: "I arrived before you.", japanese: "〜より早く" }] }
+    ]
+  },
+  "between": {
+    word: "between",
+    phonetic: "/bɪˈtwiːn/",
+    japanese: "〜の間に",
+    meanings: [
+      { partOfSpeech: "preposition", definitions: [{ definition: "In the space separating two things.", example: "The cat is between the boxes.", japanese: "2つのものを隔てる空間に" }] }
+    ]
+  },
+  "through": {
+    word: "through",
+    phonetic: "/θruː/",
+    japanese: "〜を通って",
+    meanings: [
+      { partOfSpeech: "preposition", definitions: [{ definition: "Moving in one side and out the other.", example: "Walk through the door.", japanese: "一方から入り反対側から出る" }] }
+    ]
+  },
+  "during": {
+    word: "during",
+    phonetic: "/ˈdʊrɪŋ/",
+    japanese: "〜の間",
+    meanings: [
+      { partOfSpeech: "preposition", definitions: [{ definition: "Throughout the duration of.", example: "During the meeting, I took notes.", japanese: "〜の間ずっと" }] }
+    ]
+  },
+  "without": {
+    word: "without",
+    phonetic: "/wɪˈðaʊt/",
+    japanese: "〜なしで",
+    meanings: [
+      { partOfSpeech: "preposition", definitions: [{ definition: "In the absence of.", example: "I can't live without you.", japanese: "〜がない状態で" }] }
+    ]
+  },
+  "within": {
+    word: "within",
+    phonetic: "/wɪˈðɪn/",
+    japanese: "〜以内に",
+    meanings: [
+      { partOfSpeech: "preposition", definitions: [{ definition: "Inside the bounds of.", example: "Reply within 24 hours.", japanese: "〜の範囲内で" }] }
+    ]
+  },
+  "above": {
+    word: "above",
+    phonetic: "/əˈbʌv/",
+    japanese: "〜の上に",
+    meanings: [
+      { partOfSpeech: "preposition", definitions: [{ definition: "At a higher level than.", example: "The bird flew above the trees.", japanese: "〜より高い位置に" }] }
+    ]
+  },
+  "below": {
+    word: "below",
+    phonetic: "/bɪˈloʊ/",
+    japanese: "〜の下に",
+    meanings: [
+      { partOfSpeech: "preposition", definitions: [{ definition: "At a lower level than.", example: "The fish swam below the surface.", japanese: "〜より低い位置に" }] }
+    ]
+  },
+  "under": {
+    word: "under",
+    phonetic: "/ˈʌndər/",
+    japanese: "〜の下に",
+    meanings: [
+      { partOfSpeech: "preposition", definitions: [{ definition: "Beneath and covered by.", example: "The cat is under the table.", japanese: "〜の下で覆われて" }] }
+    ]
+  },
+  "over": {
+    word: "over",
+    phonetic: "/ˈoʊvər/",
+    japanese: "〜の上に、終わって",
+    meanings: [
+      { partOfSpeech: "preposition", definitions: [{ definition: "Above and across.", example: "The plane flew over the city.", japanese: "〜の上を横切って" }] }
+    ]
+  },
+  "into": {
+    word: "into",
+    phonetic: "/ˈɪntuː/",
+    japanese: "〜の中へ",
+    meanings: [
+      { partOfSpeech: "preposition", definitions: [{ definition: "Expressing movement to the inside.", example: "She walked into the room.", japanese: "中への動きを表す" }] }
+    ]
+  },
+  "onto": {
+    word: "onto",
+    phonetic: "/ˈɒntuː/",
+    japanese: "〜の上へ",
+    meanings: [
+      { partOfSpeech: "preposition", definitions: [{ definition: "Moving to a position on.", example: "Jump onto the stage.", japanese: "〜の上の位置へ移動" }] }
+    ]
+  },
+  "around": {
+    word: "around",
+    phonetic: "/əˈraʊnd/",
+    japanese: "〜の周りに",
+    meanings: [
+      { partOfSpeech: "preposition", definitions: [{ definition: "On every side of.", example: "They sat around the fire.", japanese: "〜の四方に" }] }
+    ]
+  },
+  "along": {
+    word: "along",
+    phonetic: "/əˈlɒŋ/",
+    japanese: "〜に沿って",
+    meanings: [
+      { partOfSpeech: "preposition", definitions: [{ definition: "Moving in a constant direction.", example: "Walk along the river.", japanese: "一定の方向に動いて" }] }
+    ]
+  },
+  "across": {
+    word: "across",
+    phonetic: "/əˈkrɒs/",
+    japanese: "〜を横切って",
+    meanings: [
+      { partOfSpeech: "preposition", definitions: [{ definition: "From one side to the other.", example: "Swim across the river.", japanese: "一方から他方へ" }] }
+    ]
+  },
+  "toward": {
+    word: "toward",
+    phonetic: "/təˈwɔːrd/",
+    japanese: "〜に向かって",
+    meanings: [
+      { partOfSpeech: "preposition", definitions: [{ definition: "In the direction of.", example: "Walk toward the light.", japanese: "〜の方向に" }] }
+    ]
+  },
+  "against": {
+    word: "against",
+    phonetic: "/əˈɡɛnst/",
+    japanese: "〜に対して",
+    meanings: [
+      { partOfSpeech: "preposition", definitions: [{ definition: "In opposition to.", example: "I'm against the idea.", japanese: "〜に反対して" }] }
+    ]
+  },
+  "behind": {
+    word: "behind",
+    phonetic: "/bɪˈhaɪnd/",
+    japanese: "〜の後ろに",
+    meanings: [
+      { partOfSpeech: "preposition", definitions: [{ definition: "At the back of.", example: "Hide behind the tree.", japanese: "〜の背後に" }] }
+    ]
+  },
+  "beside": {
+    word: "beside",
+    phonetic: "/bɪˈsaɪd/",
+    japanese: "〜のそばに",
+    meanings: [
+      { partOfSpeech: "preposition", definitions: [{ definition: "At the side of.", example: "Sit beside me.", japanese: "〜の横に" }] }
+    ]
+  },
+  "near": {
+    word: "near",
+    phonetic: "/nɪr/",
+    japanese: "〜の近くに",
+    meanings: [
+      { partOfSpeech: "preposition", definitions: [{ definition: "At a short distance from.", example: "The school is near my house.", japanese: "〜から短い距離に" }] }
+    ]
+  },
+  "far": {
+    word: "far",
+    phonetic: "/fɑːr/",
+    japanese: "遠い",
+    meanings: [
+      { partOfSpeech: "adverb", definitions: [{ definition: "At a great distance.", example: "How far is it?", japanese: "大きな距離に" }] }
+    ]
+  },
+  "close": {
+    word: "close",
+    phonetic: "/kloʊz/",
+    japanese: "閉じる、近い",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Move to cover an opening.", example: "Close the door.", japanese: "開口部を覆うように動かす" }] },
+      { partOfSpeech: "adjective", definitions: [{ definition: "At a short distance.", example: "The store is close by.", japanese: "短い距離に" }] }
+    ]
+  },
+  "open": {
+    word: "open",
+    phonetic: "/ˈoʊpən/",
+    japanese: "開ける、開いた",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Move to allow access.", example: "Open the window.", japanese: "アクセスを許すように動かす" }] },
+      { partOfSpeech: "adjective", definitions: [{ definition: "Not closed or blocked.", example: "The shop is open.", japanese: "閉じていない、塞がれていない" }] }
+    ]
+  },
+  "start": {
+    word: "start",
+    phonetic: "/stɑːrt/",
+    japanese: "始める、開始",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Begin or set in motion.", example: "Start the engine.", japanese: "始めるまたは動かし始める" }] }
+    ]
+  },
+  "stop": {
+    word: "stop",
+    phonetic: "/stɒp/",
+    japanese: "止まる、やめる",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Cease moving or operating.", example: "Stop the car.", japanese: "動くまたは作動するのをやめる" }] }
+    ]
+  },
+  "begin": {
+    word: "begin",
+    phonetic: "/bɪˈɡɪn/",
+    japanese: "始まる",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Start to happen.", example: "The show will begin soon.", japanese: "起こり始める" }] }
+    ]
+  },
+  "end": {
+    word: "end",
+    phonetic: "/ɛnd/",
+    japanese: "終わり、終える",
+    meanings: [
+      { partOfSpeech: "noun", definitions: [{ definition: "The final part.", example: "The end of the movie.", japanese: "最後の部分" }] },
+      { partOfSpeech: "verb", definitions: [{ definition: "Come to a conclusion.", example: "The meeting ended at 5.", japanese: "結論に達する" }] }
+    ]
+  },
+  "finish": {
+    word: "finish",
+    phonetic: "/ˈfɪnɪʃ/",
+    japanese: "終える、完了する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Complete an action.", example: "I finished my homework.", japanese: "行動を完了する" }] }
+    ]
+  },
+  "continue": {
+    word: "continue",
+    phonetic: "/kənˈtɪnjuː/",
+    japanese: "続ける",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Persist in an activity.", example: "Continue reading.", japanese: "活動を続ける" }] }
+    ]
+  },
+  "keep": {
+    word: "keep",
+    phonetic: "/kiːp/",
+    japanese: "保つ、続ける",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Retain possession of.", example: "Keep the change.", japanese: "所有し続ける" }] }
+    ]
+  },
+  "hold": {
+    word: "hold",
+    phonetic: "/hoʊld/",
+    japanese: "持つ、握る",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Grasp with hands.", example: "Hold my hand.", japanese: "手で握る" }] }
+    ]
+  },
+  "put": {
+    word: "put",
+    phonetic: "/pʊt/",
+    japanese: "置く",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Place in a position.", example: "Put it on the table.", japanese: "位置に置く" }] }
+    ]
+  },
+  "take": {
+    word: "take",
+    phonetic: "/teɪk/",
+    japanese: "取る、連れて行く",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Reach for and hold.", example: "Take my hand.", japanese: "手を伸ばして持つ" }] }
+    ]
+  },
+  "bring": {
+    word: "bring",
+    phonetic: "/brɪŋ/",
+    japanese: "持ってくる",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Carry toward the speaker.", example: "Bring me some water.", japanese: "話者の方へ運ぶ" }] }
+    ]
+  },
+  "carry": {
+    word: "carry",
+    phonetic: "/ˈkæri/",
+    japanese: "運ぶ",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Support and move.", example: "Carry the bags.", japanese: "支えて動かす" }] }
+    ]
+  },
+  "move": {
+    word: "move",
+    phonetic: "/muːv/",
+    japanese: "動く、動かす",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Change position.", example: "Don't move!", japanese: "位置を変える" }] }
+    ]
+  },
+  "turn": {
+    word: "turn",
+    phonetic: "/tɜːrn/",
+    japanese: "回る、曲がる",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Move in a circular direction.", example: "Turn left at the corner.", japanese: "円を描くように動く" }] }
+    ]
+  },
+  "stand": {
+    word: "stand",
+    phonetic: "/stænd/",
+    japanese: "立つ",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Be on one's feet.", example: "Please stand up.", japanese: "足で立っている" }] }
+    ]
+  },
+  "sit": {
+    word: "sit",
+    phonetic: "/sɪt/",
+    japanese: "座る",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Be seated.", example: "Sit down, please.", japanese: "座っている" }] }
+    ]
+  },
+  "lie": {
+    word: "lie",
+    phonetic: "/laɪ/",
+    japanese: "横になる、嘘をつく",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Be in a horizontal position.", example: "Lie on the bed.", japanese: "水平な姿勢でいる" }] }
+    ]
+  },
+  "rise": {
+    word: "rise",
+    phonetic: "/raɪz/",
+    japanese: "上がる",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Move from a lower to a higher position.", example: "The sun will rise.", japanese: "低い位置から高い位置へ動く" }] }
+    ]
+  },
+  "fall": {
+    word: "fall",
+    phonetic: "/fɔːl/",
+    japanese: "落ちる、秋",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Drop down from a higher place.", example: "Leaves fall in autumn.", japanese: "高い場所から下に落ちる" }] }
+    ]
+  },
+  "grow": {
+    word: "grow",
+    phonetic: "/ɡroʊ/",
+    japanese: "成長する、育てる",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Increase in size.", example: "Children grow fast.", japanese: "大きさが増す" }] }
+    ]
+  },
+  "become": {
+    word: "become",
+    phonetic: "/bɪˈkʌm/",
+    japanese: "〜になる",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Begin to be.", example: "She became a doctor.", japanese: "〜であり始める" }] }
+    ]
+  },
+  "seem": {
+    word: "seem",
+    phonetic: "/siːm/",
+    japanese: "〜のように見える",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Give the impression of being.", example: "You seem tired.", japanese: "〜である印象を与える" }] }
+    ]
+  },
+  "appear": {
+    word: "appear",
+    phonetic: "/əˈpɪr/",
+    japanese: "現れる、〜に見える",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Come into sight.", example: "The sun appeared.", japanese: "見えるようになる" }] }
+    ]
+  },
+  "show": {
+    word: "show",
+    phonetic: "/ʃoʊ/",
+    japanese: "見せる、示す",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Make visible.", example: "Show me your work.", japanese: "見えるようにする" }] }
+    ]
+  },
+  "tell": {
+    word: "tell",
+    phonetic: "/tɛl/",
+    japanese: "伝える、話す",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Communicate information.", example: "Tell me the truth.", japanese: "情報を伝える" }] }
+    ]
+  },
+  "ask": {
+    word: "ask",
+    phonetic: "/æsk/",
+    japanese: "尋ねる、頼む",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Request information.", example: "Ask a question.", japanese: "情報を求める" }] }
+    ]
+  },
+  "answer": {
+    word: "answer",
+    phonetic: "/ˈænsər/",
+    japanese: "答える、答え",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Respond to a question.", example: "Answer the phone.", japanese: "質問に応答する" }] }
+    ]
+  },
+  "speak": {
+    word: "speak",
+    phonetic: "/spiːk/",
+    japanese: "話す",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Say words.", example: "Speak slowly, please.", japanese: "言葉を言う" }] }
+    ]
+  },
+  "talk": {
+    word: "talk",
+    phonetic: "/tɔːk/",
+    japanese: "話す、会話",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Have a conversation.", example: "Let's talk later.", japanese: "会話をする" }] }
+    ]
+  },
+  "say": {
+    word: "say",
+    phonetic: "/seɪ/",
+    japanese: "言う",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Utter words.", example: "What did you say?", japanese: "言葉を発する" }] }
+    ]
+  },
+  "hear": {
+    word: "hear",
+    phonetic: "/hɪr/",
+    japanese: "聞こえる",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Perceive with the ear.", example: "I can hear music.", japanese: "耳で知覚する" }] }
+    ]
+  },
+  "listen": {
+    word: "listen",
+    phonetic: "/ˈlɪsən/",
+    japanese: "聞く、耳を傾ける",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Give attention to sound.", example: "Listen to this song.", japanese: "音に注意を向ける" }] }
+    ]
+  },
+  "see": {
+    word: "see",
+    phonetic: "/siː/",
+    japanese: "見る、分かる",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Perceive with the eyes.", example: "I see a bird.", japanese: "目で知覚する" }] }
+    ]
+  },
+  "look": {
+    word: "look",
+    phonetic: "/lʊk/",
+    japanese: "見る、〜に見える",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Direct one's gaze.", example: "Look at me.", japanese: "視線を向ける" }] }
+    ]
+  },
+  "watch": {
+    word: "watch",
+    phonetic: "/wɒtʃ/",
+    japanese: "見る、腕時計",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Look at attentively.", example: "Watch the movie.", japanese: "注意深く見る" }] }
+    ]
+  },
+  "feel": {
+    word: "feel",
+    phonetic: "/fiːl/",
+    japanese: "感じる",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Be aware of through senses.", example: "I feel cold.", japanese: "感覚を通じて認識する" }] }
+    ]
+  },
+  "touch": {
+    word: "touch",
+    phonetic: "/tʌtʃ/",
+    japanese: "触る、触れる",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Come into contact with.", example: "Don't touch that!", japanese: "〜と接触する" }] }
+    ]
+  },
+  "smell": {
+    word: "smell",
+    phonetic: "/smɛl/",
+    japanese: "匂いがする、嗅ぐ",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Perceive odor.", example: "This flower smells nice.", japanese: "匂いを知覚する" }] }
+    ]
+  },
+  "taste": {
+    word: "taste",
+    phonetic: "/teɪst/",
+    japanese: "味がする、味わう",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Perceive flavor.", example: "Taste this soup.", japanese: "味を知覚する" }] }
+    ]
+  },
+  "eat": {
+    word: "eat",
+    phonetic: "/iːt/",
+    japanese: "食べる",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Put food in mouth and swallow.", example: "Let's eat dinner.", japanese: "食べ物を口に入れて飲み込む" }] }
+    ]
+  },
+  "drink": {
+    word: "drink",
+    phonetic: "/drɪŋk/",
+    japanese: "飲む",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Take liquid into the mouth.", example: "Drink some water.", japanese: "液体を口に入れる" }] }
+    ]
+  },
+  "sleep": {
+    word: "sleep",
+    phonetic: "/sliːp/",
+    japanese: "眠る",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Rest in a state of sleep.", example: "I need to sleep.", japanese: "睡眠状態で休む" }] }
+    ]
+  },
+  "wake": {
+    word: "wake",
+    phonetic: "/weɪk/",
+    japanese: "起きる、起こす",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Stop sleeping.", example: "Wake up early.", japanese: "眠るのをやめる" }] }
+    ]
+  },
+  "live": {
+    word: "live",
+    phonetic: "/lɪv/",
+    japanese: "住む、生きる",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Remain alive.", example: "Where do you live?", japanese: "生き続ける" }] }
+    ]
+  },
+  "die": {
+    word: "die",
+    phonetic: "/daɪ/",
+    japanese: "死ぬ",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Stop living.", example: "The plant died.", japanese: "生きるのをやめる" }] }
+    ]
+  },
+  "kill": {
+    word: "kill",
+    phonetic: "/kɪl/",
+    japanese: "殺す",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Cause to die.", example: "Don't kill the spider.", japanese: "死なせる" }] }
+    ]
+  },
+  "cut": {
+    word: "cut",
+    phonetic: "/kʌt/",
+    japanese: "切る",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Make an opening with a sharp tool.", example: "Cut the paper.", japanese: "鋭い道具で開口部を作る" }] }
+    ]
+  },
+  "break": {
+    word: "break",
+    phonetic: "/breɪk/",
+    japanese: "壊す、休憩",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Separate into pieces.", example: "Don't break the glass.", japanese: "ピースに分ける" }] }
+    ]
+  },
+  "fix": {
+    word: "fix",
+    phonetic: "/fɪks/",
+    japanese: "直す、修理する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Repair something.", example: "Fix the broken chair.", japanese: "何かを修理する" }] }
+    ]
+  },
+  "build": {
+    word: "build",
+    phonetic: "/bɪld/",
+    japanese: "建てる、構築する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Construct by putting parts together.", example: "Build a house.", japanese: "部品を組み合わせて構築する" }] }
+    ]
+  },
+  "create": {
+    word: "create",
+    phonetic: "/kriˈeɪt/",
+    japanese: "作る、創造する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Bring into existence.", example: "Create something new.", japanese: "存在させる" }] }
+    ]
+  },
+  "make": {
+    word: "make",
+    phonetic: "/meɪk/",
+    japanese: "作る",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Form by putting parts together.", example: "Make a cake.", japanese: "部品を組み合わせて形成する" }] }
+    ]
+  },
+  "use": {
+    word: "use",
+    phonetic: "/juːz/",
+    japanese: "使う",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Take and hold for a purpose.", example: "Use a pen to write.", japanese: "目的のために取って持つ" }] }
+    ]
+  },
+  "try": {
+    word: "try",
+    phonetic: "/traɪ/",
+    japanese: "試す、努力する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Make an attempt.", example: "Try your best.", japanese: "試みをする" }] }
+    ]
+  },
+  "need": {
+    word: "need",
+    phonetic: "/niːd/",
+    japanese: "必要とする",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Require something.", example: "I need help.", japanese: "何かを必要とする" }] }
+    ]
+  },
+  "want": {
+    word: "want",
+    phonetic: "/wɒnt/",
+    japanese: "欲しい、したい",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Desire something.", example: "I want ice cream.", japanese: "何かを望む" }] }
+    ]
+  },
+  "like": {
+    word: "like",
+    phonetic: "/laɪk/",
+    japanese: "好き、〜のような",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Find agreeable.", example: "I like pizza.", japanese: "好ましいと思う" }] }
+    ]
+  },
+  "hope": {
+    word: "hope",
+    phonetic: "/hoʊp/",
+    japanese: "望む、希望",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Want something to happen.", example: "I hope you're well.", japanese: "何かが起こることを望む" }] }
+    ]
+  },
+  "wish": {
+    word: "wish",
+    phonetic: "/wɪʃ/",
+    japanese: "願う、望む",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Feel a strong desire.", example: "I wish I could fly.", japanese: "強い願望を感じる" }] }
+    ]
+  },
+  "expect": {
+    word: "expect",
+    phonetic: "/ɪkˈspɛkt/",
+    japanese: "期待する、予期する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Regard as likely to happen.", example: "I expect rain tomorrow.", japanese: "起こりそうだと思う" }] }
+    ]
+  },
+  "believe": {
+    word: "believe",
+    phonetic: "/bɪˈliːv/",
+    japanese: "信じる",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Accept as true.", example: "I believe you.", japanese: "真実として受け入れる" }] }
+    ]
+  },
+  "think": {
+    word: "think",
+    phonetic: "/θɪŋk/",
+    japanese: "考える、思う",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Use the mind to consider.", example: "I think it's a good idea.", japanese: "心を使って考慮する" }] }
+    ]
+  },
+  "know": {
+    word: "know",
+    phonetic: "/noʊ/",
+    japanese: "知っている",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Be aware of through observation.", example: "I know the answer.", japanese: "観察を通じて認識している" }] }
+    ]
+  },
+  "learn": {
+    word: "learn",
+    phonetic: "/lɜːrn/",
+    japanese: "学ぶ、習う",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Gain knowledge or skill.", example: "Learn a new language.", japanese: "知識やスキルを得る" }] }
+    ]
+  },
+  "teach": {
+    word: "teach",
+    phonetic: "/tiːtʃ/",
+    japanese: "教える",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Impart knowledge to.", example: "Teach me how to cook.", japanese: "知識を伝える" }] }
+    ]
+  },
+  "study": {
+    word: "study",
+    phonetic: "/ˈstʌdi/",
+    japanese: "勉強する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Apply the mind to learning.", example: "Study hard for the exam.", japanese: "学習に心を向ける" }] }
+    ]
+  },
+  "read": {
+    word: "read",
+    phonetic: "/riːd/",
+    japanese: "読む",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Look at and understand written words.", example: "Read a book.", japanese: "書かれた言葉を見て理解する" }] }
+    ]
+  },
+  "write": {
+    word: "write",
+    phonetic: "/raɪt/",
+    japanese: "書く",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Mark letters on a surface.", example: "Write your name.", japanese: "表面に文字を記す" }] }
+    ]
+  },
+  "play": {
+    word: "play",
+    phonetic: "/pleɪ/",
+    japanese: "遊ぶ、演奏する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Engage in activity for enjoyment.", example: "Play with friends.", japanese: "楽しみのための活動に従事する" }] }
+    ]
+  },
+  "work": {
+    word: "work",
+    phonetic: "/wɜːrk/",
+    japanese: "働く、仕事",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Do a job or task.", example: "I work every day.", japanese: "仕事やタスクをする" }] }
+    ]
+  },
+  "help": {
+    word: "help",
+    phonetic: "/hɛlp/",
+    japanese: "助ける、手伝う",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Make it easier for someone.", example: "Can you help me?", japanese: "誰かにとって楽にする" }] }
+    ]
+  },
+  "give": {
+    word: "give",
+    phonetic: "/ɡɪv/",
+    japanese: "あげる、与える",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Freely transfer to someone.", example: "Give me your hand.", japanese: "誰かに自由に渡す" }] }
+    ]
+  },
+  "get": {
+    word: "get",
+    phonetic: "/ɡɛt/",
+    japanese: "得る、なる",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Come to have or receive.", example: "Get a gift.", japanese: "持つようになるまたは受け取る" }] }
+    ]
+  },
+  "send": {
+    word: "send",
+    phonetic: "/sɛnd/",
+    japanese: "送る",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Cause to go to a destination.", example: "Send an email.", japanese: "目的地に行かせる" }] }
+    ]
+  },
+  "receive": {
+    word: "receive",
+    phonetic: "/rɪˈsiːv/",
+    japanese: "受け取る",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Be given something.", example: "Receive a package.", japanese: "何かを与えられる" }] }
+    ]
+  },
+  "buy": {
+    word: "buy",
+    phonetic: "/baɪ/",
+    japanese: "買う",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Obtain in exchange for payment.", example: "Buy some food.", japanese: "支払いと引き換えに得る" }] }
+    ]
+  },
+  "sell": {
+    word: "sell",
+    phonetic: "/sɛl/",
+    japanese: "売る",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Give in exchange for money.", example: "Sell your car.", japanese: "お金と引き換えに与える" }] }
+    ]
+  },
+  "pay": {
+    word: "pay",
+    phonetic: "/peɪ/",
+    japanese: "払う",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Give money for goods or services.", example: "Pay the bill.", japanese: "商品やサービスにお金を払う" }] }
+    ]
+  },
+  "cost": {
+    word: "cost",
+    phonetic: "/kɒst/",
+    japanese: "費用がかかる、値段",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Require a specified payment.", example: "How much does it cost?", japanese: "特定の支払いを必要とする" }] }
+    ]
+  },
+  "spend": {
+    word: "spend",
+    phonetic: "/spɛnd/",
+    japanese: "使う、過ごす",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Pay out money.", example: "Spend money wisely.", japanese: "お金を支払う" }] }
+    ]
+  },
+  "save": {
+    word: "save",
+    phonetic: "/seɪv/",
+    japanese: "救う、節約する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Keep safe from harm.", example: "Save the document.", japanese: "害から安全に保つ" }] }
+    ]
+  },
+  "lose": {
+    word: "lose",
+    phonetic: "/luːz/",
+    japanese: "失う、負ける",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Be deprived of.", example: "Don't lose your key.", japanese: "〜を奪われる" }] }
+    ]
+  },
+  "find": {
+    word: "find",
+    phonetic: "/faɪnd/",
+    japanese: "見つける",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Discover or locate.", example: "Find your phone.", japanese: "発見するまたは見つける" }] }
+    ]
+  },
+  "leave": {
+    word: "leave",
+    phonetic: "/liːv/",
+    japanese: "去る、残す",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Go away from.", example: "Leave the room.", japanese: "〜から去る" }] }
+    ]
+  },
+  "stay": {
+    word: "stay",
+    phonetic: "/steɪ/",
+    japanese: "滞在する、留まる",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Remain in a place.", example: "Stay here.", japanese: "場所に留まる" }] }
+    ]
+  },
+  "arrive": {
+    word: "arrive",
+    phonetic: "/əˈraɪv/",
+    japanese: "到着する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Reach a destination.", example: "We will arrive soon.", japanese: "目的地に到達する" }] }
+    ]
+  },
+  "return": {
+    word: "return",
+    phonetic: "/rɪˈtɜːrn/",
+    japanese: "戻る、返す",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Come or go back.", example: "Return home.", japanese: "戻ってくるまたは行く" }] }
+    ]
+  },
+  "visit": {
+    word: "visit",
+    phonetic: "/ˈvɪzɪt/",
+    japanese: "訪問する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Go to see someone or a place.", example: "Visit your grandmother.", japanese: "誰かまたは場所を見に行く" }] }
+    ]
+  },
+  "meet": {
+    word: "meet",
+    phonetic: "/miːt/",
+    japanese: "会う",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Come into the presence of.", example: "Nice to meet you.", japanese: "〜の前に来る" }] }
+    ]
+  },
+  "join": {
+    word: "join",
+    phonetic: "/dʒɔɪn/",
+    japanese: "加わる、参加する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Link or connect.", example: "Join our team.", japanese: "つなげるまたは接続する" }] }
+    ]
+  },
+  "follow": {
+    word: "follow",
+    phonetic: "/ˈfɒloʊ/",
+    japanese: "従う、追う",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Go or come after.", example: "Follow me.", japanese: "〜の後を行くまたは来る" }] }
+    ]
+  },
+  "lead": {
+    word: "lead",
+    phonetic: "/liːd/",
+    japanese: "導く、先頭",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Show the way to.", example: "Lead the team.", japanese: "〜への道を示す" }] }
+    ]
+  },
+  "wait": {
+    word: "wait",
+    phonetic: "/weɪt/",
+    japanese: "待つ",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Stay in place until something happens.", example: "Wait for me.", japanese: "何かが起こるまでその場に留まる" }] }
+    ]
+  },
+  "run": {
+    word: "run",
+    phonetic: "/rʌn/",
+    japanese: "走る",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Move at a speed faster than walking.", example: "Run fast!", japanese: "歩くより速く動く" }] }
+    ]
+  },
+  "walk": {
+    word: "walk",
+    phonetic: "/wɔːk/",
+    japanese: "歩く",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Move at a regular pace by lifting each foot.", example: "Walk to school.", japanese: "各足を上げて規則的なペースで動く" }] }
+    ]
+  },
+  "jump": {
+    word: "jump",
+    phonetic: "/dʒʌmp/",
+    japanese: "跳ぶ",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Push oneself off the ground.", example: "Jump over the fence.", japanese: "地面から自分を押し上げる" }] }
+    ]
+  },
+  "fly": {
+    word: "fly",
+    phonetic: "/flaɪ/",
+    japanese: "飛ぶ",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Move through the air.", example: "Birds can fly.", japanese: "空中を移動する" }] }
+    ]
+  },
+  "swim": {
+    word: "swim",
+    phonetic: "/swɪm/",
+    japanese: "泳ぐ",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Propel the body through water.", example: "Swim in the pool.", japanese: "水中で体を推進する" }] }
+    ]
+  },
+  "drive": {
+    word: "drive",
+    phonetic: "/draɪv/",
+    japanese: "運転する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Operate and control a vehicle.", example: "Drive a car.", japanese: "車両を操作してコントロールする" }] }
+    ]
+  },
+  "ride": {
+    word: "ride",
+    phonetic: "/raɪd/",
+    japanese: "乗る",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Sit on and control a moving animal or vehicle.", example: "Ride a bike.", japanese: "動物や乗り物に乗ってコントロールする" }] }
+    ]
+  },
+  "travel": {
+    word: "travel",
+    phonetic: "/ˈtrævəl/",
+    japanese: "旅行する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Go from one place to another.", example: "Travel the world.", japanese: "ある場所から別の場所へ行く" }] }
+    ]
+  },
+  "call": {
+    word: "call",
+    phonetic: "/kɔːl/",
+    japanese: "呼ぶ、電話する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Cry out to summon someone.", example: "Call your mother.", japanese: "誰かを呼び出すために叫ぶ" }] }
+    ]
+  },
+  "change": {
+    word: "change",
+    phonetic: "/tʃeɪndʒ/",
+    japanese: "変える、変化",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Make or become different.", example: "Change your clothes.", japanese: "異なるものにするまたはなる" }] }
+    ]
+  },
+  "choose": {
+    word: "choose",
+    phonetic: "/tʃuːz/",
+    japanese: "選ぶ",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Pick out as being the best.", example: "Choose wisely.", japanese: "最良のものとして選び出す" }] }
+    ]
+  },
+  "decide": {
+    word: "decide",
+    phonetic: "/dɪˈsaɪd/",
+    japanese: "決める",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Come to a resolution.", example: "Decide what to do.", japanese: "解決に達する" }] }
+    ]
+  },
+  "remember": {
+    word: "remember",
+    phonetic: "/rɪˈmɛmbər/",
+    japanese: "覚えている",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Have in one's mind.", example: "Remember my name.", japanese: "心に持っている" }] }
+    ]
+  },
+  "forget": {
+    word: "forget",
+    phonetic: "/fərˈɡɛt/",
+    japanese: "忘れる",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Fail to remember.", example: "Don't forget your keys.", japanese: "思い出せない" }] }
+    ]
+  },
+  "understand": {
+    word: "understand",
+    phonetic: "/ˌʌndərˈstænd/",
+    japanese: "理解する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Perceive the meaning of.", example: "I understand you.", japanese: "意味を理解する" }] }
+    ]
+  },
+  "explain": {
+    word: "explain",
+    phonetic: "/ɪkˈspleɪn/",
+    japanese: "説明する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Make clear by describing.", example: "Explain the rules.", japanese: "説明して明確にする" }] }
+    ]
+  },
+  "mean": {
+    word: "mean",
+    phonetic: "/miːn/",
+    japanese: "意味する、意地悪な",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Intend to convey.", example: "What do you mean?", japanese: "伝えるつもりである" }] }
+    ]
+  },
+  "agree": {
+    word: "agree",
+    phonetic: "/əˈɡriː/",
+    japanese: "同意する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Have the same opinion.", example: "I agree with you.", japanese: "同じ意見を持つ" }] }
+    ]
+  },
+  "disagree": {
+    word: "disagree",
+    phonetic: "/ˌdɪsəˈɡriː/",
+    japanese: "反対する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Have a different opinion.", example: "I disagree with that.", japanese: "異なる意見を持つ" }] }
+    ]
+  },
+  "accept": {
+    word: "accept",
+    phonetic: "/əkˈsɛpt/",
+    japanese: "受け入れる",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Consent to receive.", example: "Accept the offer.", japanese: "受け取ることに同意する" }] }
+    ]
+  },
+  "refuse": {
+    word: "refuse",
+    phonetic: "/rɪˈfjuːz/",
+    japanese: "断る",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Indicate unwillingness.", example: "Refuse to help.", japanese: "意思がないことを示す" }] }
+    ]
+  },
+  "allow": {
+    word: "allow",
+    phonetic: "/əˈlaʊ/",
+    japanese: "許可する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Give permission for.", example: "Allow me to explain.", japanese: "〜の許可を与える" }] }
+    ]
+  },
+  "let": {
+    word: "let",
+    phonetic: "/lɛt/",
+    japanese: "〜させる",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Not prevent or forbid.", example: "Let me go.", japanese: "妨げたり禁じたりしない" }] }
+    ]
+  },
+  "check": {
+    word: "check",
+    phonetic: "/tʃɛk/",
+    japanese: "確認する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Examine to determine accuracy.", example: "Check your work.", japanese: "正確さを確認するために調べる" }] }
+    ]
+  },
+  "include": {
+    word: "include",
+    phonetic: "/ɪnˈkluːd/",
+    japanese: "含む",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Contain as part of a whole.", example: "The price includes tax.", japanese: "全体の一部として含む" }] }
+    ]
+  },
+  "add": {
+    word: "add",
+    phonetic: "/æd/",
+    japanese: "加える",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Join something to something else.", example: "Add sugar to the coffee.", japanese: "何かを別のものに加える" }] }
+    ]
+  },
+  "remove": {
+    word: "remove",
+    phonetic: "/rɪˈmuːv/",
+    japanese: "取り除く",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Take away from a position.", example: "Remove the stain.", japanese: "位置から取り去る" }] }
+    ]
+  },
+  "develop": {
+    word: "develop",
+    phonetic: "/dɪˈvɛləp/",
+    japanese: "発展させる、開発する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Grow or cause to grow.", example: "Develop new skills.", japanese: "成長するまたは成長させる" }] }
+    ]
+  },
+  "improve": {
+    word: "improve",
+    phonetic: "/ɪmˈpruːv/",
+    japanese: "改善する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Make or become better.", example: "Improve your English.", japanese: "より良くするまたはなる" }] }
+    ]
+  },
+  "increase": {
+    word: "increase",
+    phonetic: "/ɪnˈkriːs/",
+    japanese: "増加する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Become or make greater.", example: "Prices will increase.", japanese: "より大きくなるまたはする" }] }
+    ]
+  },
+  "reduce": {
+    word: "reduce",
+    phonetic: "/rɪˈdjuːs/",
+    japanese: "減らす",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Make smaller in size or amount.", example: "Reduce waste.", japanese: "サイズや量を小さくする" }] }
+    ]
+  },
+  "support": {
+    word: "support",
+    phonetic: "/səˈpɔːrt/",
+    japanese: "支援する、支える",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Give assistance to.", example: "Support your team.", japanese: "〜に援助を与える" }] }
+    ]
+  },
+  "provide": {
+    word: "provide",
+    phonetic: "/prəˈvaɪd/",
+    japanese: "提供する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Make available for use.", example: "Provide information.", japanese: "使用可能にする" }] }
+    ]
+  },
+  "offer": {
+    word: "offer",
+    phonetic: "/ˈɒfər/",
+    japanese: "提供する、申し出る",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Present for acceptance.", example: "Offer help.", japanese: "受け入れのために提示する" }] }
+    ]
+  },
+  "share": {
+    word: "share",
+    phonetic: "/ʃɛr/",
+    japanese: "共有する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Give a portion to others.", example: "Share your food.", japanese: "他の人に一部を与える" }] }
+    ]
+  },
+  "pass": {
+    word: "pass",
+    phonetic: "/pæs/",
+    japanese: "渡す、通る",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Move past something.", example: "Pass the salt.", japanese: "何かを通り過ぎる" }] }
+    ]
+  },
+  "pull": {
+    word: "pull",
+    phonetic: "/pʊl/",
+    japanese: "引く",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Exert force to move toward oneself.", example: "Pull the door.", japanese: "自分に向かって動かすために力を加える" }] }
+    ]
+  },
+  "push": {
+    word: "push",
+    phonetic: "/pʊʃ/",
+    japanese: "押す",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Exert force to move away from oneself.", example: "Push the button.", japanese: "自分から離れるように動かすために力を加える" }] }
+    ]
+  },
+  "throw": {
+    word: "throw",
+    phonetic: "/θroʊ/",
+    japanese: "投げる",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Propel through the air.", example: "Throw the ball.", japanese: "空中に推進する" }] }
+    ]
+  },
+  "catch": {
+    word: "catch",
+    phonetic: "/kætʃ/",
+    japanese: "捕まえる",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Seize or take hold of.", example: "Catch the ball.", japanese: "つかむまたは握る" }] }
+    ]
+  },
+  "hit": {
+    word: "hit",
+    phonetic: "/hɪt/",
+    japanese: "打つ",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Strike with force.", example: "Hit the target.", japanese: "力で打つ" }] }
+    ]
+  },
+  "kick": {
+    word: "kick",
+    phonetic: "/kɪk/",
+    japanese: "蹴る",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Strike with the foot.", example: "Kick the ball.", japanese: "足で打つ" }] }
+    ]
+  },
+  "win": {
+    word: "win",
+    phonetic: "/wɪn/",
+    japanese: "勝つ",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Be victorious in a contest.", example: "Win the game.", japanese: "コンテストで勝利する" }] }
+    ]
+  },
+  "fight": {
+    word: "fight",
+    phonetic: "/faɪt/",
+    japanese: "戦う",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Take part in a violent struggle.", example: "Fight for your rights.", japanese: "暴力的な争いに参加する" }] }
+    ]
+  },
+  "wear": {
+    word: "wear",
+    phonetic: "/wɛr/",
+    japanese: "着る、身につける",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Have on one's body as clothing.", example: "Wear a hat.", japanese: "衣服として体につける" }] }
+    ]
+  },
+  "dress": {
+    word: "dress",
+    phonetic: "/drɛs/",
+    japanese: "服を着せる、ドレス",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Put on clothes.", example: "Dress the baby.", japanese: "服を着る" }] },
+      { partOfSpeech: "noun", definitions: [{ definition: "A woman's garment.", example: "She wore a red dress.", japanese: "女性の衣服" }] }
+    ]
+  },
+  "wash": {
+    word: "wash",
+    phonetic: "/wɒʃ/",
+    japanese: "洗う",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Clean with water.", example: "Wash your hands.", japanese: "水で洗う" }] }
+    ]
+  },
+  "clean": {
+    word: "clean",
+    phonetic: "/kliːn/",
+    japanese: "きれいにする、きれいな",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Make free from dirt.", example: "Clean the room.", japanese: "汚れをなくす" }] }
+    ]
+  },
+  "cook": {
+    word: "cook",
+    phonetic: "/kʊk/",
+    japanese: "料理する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Prepare food by heating.", example: "Cook dinner.", japanese: "加熱して食べ物を準備する" }] }
+    ]
+  },
+  "bake": {
+    word: "bake",
+    phonetic: "/beɪk/",
+    japanese: "焼く（オーブンで）",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Cook by dry heat in an oven.", example: "Bake a cake.", japanese: "オーブンで乾熱調理する" }] }
+    ]
+  },
+  "order": {
+    word: "order",
+    phonetic: "/ˈɔːrdər/",
+    japanese: "注文する、順序",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Request something to be made or supplied.", example: "Order food online.", japanese: "何かを作るまたは供給するように頼む" }] }
+    ]
+  },
+  "serve": {
+    word: "serve",
+    phonetic: "/sɜːrv/",
+    japanese: "給仕する、仕える",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Present food or drink.", example: "Serve the guests.", japanese: "食べ物や飲み物を出す" }] }
+    ]
+  },
+  "fill": {
+    word: "fill",
+    phonetic: "/fɪl/",
+    japanese: "満たす",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Make or become full.", example: "Fill the glass.", japanese: "いっぱいにするまたはなる" }] }
+    ]
+  },
+  "empty": {
+    word: "empty",
+    phonetic: "/ˈɛmpti/",
+    japanese: "空にする、空の",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Remove all contents from.", example: "Empty the trash.", japanese: "すべての中身を取り出す" }] }
+    ]
+  },
+  "prepare": {
+    word: "prepare",
+    phonetic: "/prɪˈpɛr/",
+    japanese: "準備する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Make ready for use.", example: "Prepare for the exam.", japanese: "使用のために準備する" }] }
+    ]
+  },
+  "plan": {
+    word: "plan",
+    phonetic: "/plæn/",
+    japanese: "計画する、計画",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Decide on and arrange in advance.", example: "Plan your trip.", japanese: "事前に決定して手配する" }] }
+    ]
+  },
+  "set": {
+    word: "set",
+    phonetic: "/sɛt/",
+    japanese: "設定する、セット",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Put or arrange in a place.", example: "Set the table.", japanese: "場所に置くまたは配置する" }] }
+    ]
+  },
+  "pick": {
+    word: "pick",
+    phonetic: "/pɪk/",
+    japanese: "選ぶ、摘む",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Choose from alternatives.", example: "Pick a card.", japanese: "選択肢から選ぶ" }] }
+    ]
+  },
+  "drop": {
+    word: "drop",
+    phonetic: "/drɒp/",
+    japanese: "落とす、しずく",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Let fall.", example: "Don't drop the glass.", japanese: "落とす" }] }
+    ]
+  },
+  "raise": {
+    word: "raise",
+    phonetic: "/reɪz/",
+    japanese: "上げる、育てる",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Lift to a higher position.", example: "Raise your hand.", japanese: "より高い位置に上げる" }] }
+    ]
+  },
+  "lower": {
+    word: "lower",
+    phonetic: "/ˈloʊər/",
+    japanese: "下げる",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Move to a lower position.", example: "Lower your voice.", japanese: "より低い位置に動かす" }] }
+    ]
+  },
+  "hang": {
+    word: "hang",
+    phonetic: "/hæŋ/",
+    japanese: "掛ける、吊るす",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Suspend from above.", example: "Hang the picture.", japanese: "上から吊るす" }] }
+    ]
+  },
+  "connect": {
+    word: "connect",
+    phonetic: "/kəˈnɛkt/",
+    japanese: "接続する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Link together.", example: "Connect to WiFi.", japanese: "一緒につなぐ" }] }
+    ]
+  },
+  "separate": {
+    word: "separate",
+    phonetic: "/ˈsɛpəreɪt/",
+    japanese: "分ける、別々の",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Divide into parts.", example: "Separate the eggs.", japanese: "部分に分ける" }] }
+    ]
+  },
+  "mix": {
+    word: "mix",
+    phonetic: "/mɪks/",
+    japanese: "混ぜる",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Combine together.", example: "Mix the ingredients.", japanese: "一緒に組み合わせる" }] }
+    ]
+  },
+  "compare": {
+    word: "compare",
+    phonetic: "/kəmˈpɛr/",
+    japanese: "比較する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Examine similarities and differences.", example: "Compare the prices.", japanese: "類似点と相違点を調べる" }] }
+    ]
+  },
+  "copy": {
+    word: "copy",
+    phonetic: "/ˈkɒpi/",
+    japanese: "コピーする、複製",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Make a duplicate of.", example: "Copy the file.", japanese: "複製を作る" }] }
+    ]
+  },
+  "count": {
+    word: "count",
+    phonetic: "/kaʊnt/",
+    japanese: "数える",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Determine the total number.", example: "Count to ten.", japanese: "合計数を決定する" }] }
+    ]
+  },
+  "measure": {
+    word: "measure",
+    phonetic: "/ˈmɛʒər/",
+    japanese: "測る",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Ascertain the size or amount.", example: "Measure the length.", japanese: "サイズや量を確認する" }] }
+    ]
+  },
+  "test": {
+    word: "test",
+    phonetic: "/tɛst/",
+    japanese: "テストする、試験",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Take measures to check quality.", example: "Test the product.", japanese: "品質を確認するための措置を取る" }] }
+    ]
+  },
+  "guess": {
+    word: "guess",
+    phonetic: "/ɡɛs/",
+    japanese: "推測する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Estimate without sufficient information.", example: "Guess the answer.", japanese: "十分な情報なしに推測する" }] }
+    ]
+  },
+  "draw": {
+    word: "draw",
+    phonetic: "/drɔː/",
+    japanese: "描く、引く",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Produce a picture.", example: "Draw a circle.", japanese: "絵を描く" }] }
+    ]
+  },
+  "paint": {
+    word: "paint",
+    phonetic: "/peɪnt/",
+    japanese: "塗る、絵を描く",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Apply color to a surface.", example: "Paint the wall.", japanese: "表面に色を塗る" }] }
+    ]
+  },
+  "sing": {
+    word: "sing",
+    phonetic: "/sɪŋ/",
+    japanese: "歌う",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Make musical sounds with the voice.", example: "Sing a song.", japanese: "声で音楽的な音を出す" }] }
+    ]
+  },
+  "dance": {
+    word: "dance",
+    phonetic: "/dæns/",
+    japanese: "踊る、ダンス",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Move rhythmically to music.", example: "Dance with me.", japanese: "音楽に合わせてリズミカルに動く" }] }
+    ]
+  },
+  "laugh": {
+    word: "laugh",
+    phonetic: "/læf/",
+    japanese: "笑う",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Make sounds expressing amusement.", example: "Laugh at a joke.", japanese: "楽しさを表す音を出す" }] }
+    ]
+  },
+  "cry": {
+    word: "cry",
+    phonetic: "/kraɪ/",
+    japanese: "泣く、叫ぶ",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Shed tears.", example: "Don't cry.", japanese: "涙を流す" }] }
+    ]
+  },
+  "smile": {
+    word: "smile",
+    phonetic: "/smaɪl/",
+    japanese: "微笑む",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Form a pleased expression.", example: "Smile for the camera.", japanese: "喜んだ表情をする" }] }
+    ]
+  },
+  "enjoy": {
+    word: "enjoy",
+    phonetic: "/ɪnˈdʒɔɪ/",
+    japanese: "楽しむ",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Take delight in.", example: "Enjoy your meal.", japanese: "〜を喜ぶ" }] }
+    ]
+  },
+  "hate": {
+    word: "hate",
+    phonetic: "/heɪt/",
+    japanese: "嫌う",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Feel intense dislike for.", example: "I hate lies.", japanese: "強い嫌悪を感じる" }] }
+    ]
+  },
+  "care": {
+    word: "care",
+    phonetic: "/kɛr/",
+    japanese: "気にかける、世話",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Feel concern.", example: "I care about you.", japanese: "関心を感じる" }] }
+    ]
+  },
+  "worry": {
+    word: "worry",
+    phonetic: "/ˈwɜːri/",
+    japanese: "心配する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Feel anxious.", example: "Don't worry about it.", japanese: "不安を感じる" }] }
+    ]
+  },
+  "hurt": {
+    word: "hurt",
+    phonetic: "/hɜːrt/",
+    japanese: "傷つける、痛い",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Cause physical or mental pain.", example: "That hurts!", japanese: "身体的または精神的な痛みを引き起こす" }] }
+    ]
+  },
+  "surprise": {
+    word: "surprise",
+    phonetic: "/sərˈpraɪz/",
+    japanese: "驚かせる、驚き",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Cause to feel amazement.", example: "Surprise your friend.", japanese: "驚きを感じさせる" }] }
+    ]
+  },
+  "satisfy": {
+    word: "satisfy",
+    phonetic: "/ˈsætɪsfaɪ/",
+    japanese: "満足させる",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Meet the expectations of.", example: "Satisfy the customer.", japanese: "期待に応える" }] }
+    ]
+  },
+  "prefer": {
+    word: "prefer",
+    phonetic: "/prɪˈfɜːr/",
+    japanese: "〜を好む",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Like better.", example: "I prefer tea to coffee.", japanese: "より好きである" }] }
+    ]
+  },
+  "miss": {
+    word: "miss",
+    phonetic: "/mɪs/",
+    japanese: "逃す、恋しく思う",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Fail to hit or catch.", example: "I miss you.", japanese: "当たらないまたはキャッチできない" }] }
+    ]
+  },
+  "reach": {
+    word: "reach",
+    phonetic: "/riːtʃ/",
+    japanese: "届く、達する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Stretch out to touch.", example: "Reach the top shelf.", japanese: "触れるために伸ばす" }] }
+    ]
+  },
+  "cross": {
+    word: "cross",
+    phonetic: "/krɒs/",
+    japanese: "渡る、横切る",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Go or extend across.", example: "Cross the street.", japanese: "横切って行くまたは伸びる" }] }
+    ]
+  },
+  "enter": {
+    word: "enter",
+    phonetic: "/ˈɛntər/",
+    japanese: "入る",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Come or go into.", example: "Enter the room.", japanese: "〜の中に入る" }] }
+    ]
+  },
+  "exit": {
+    word: "exit",
+    phonetic: "/ˈɛɡzɪt/",
+    japanese: "出る、出口",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Go out of.", example: "Exit the building.", japanese: "〜から出る" }] }
+    ]
+  },
+  "climb": {
+    word: "climb",
+    phonetic: "/klaɪm/",
+    japanese: "登る",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Go up toward the top.", example: "Climb the mountain.", japanese: "頂上に向かって上がる" }] }
+    ]
+  },
+  "rest": {
+    word: "rest",
+    phonetic: "/rɛst/",
+    japanese: "休む、残り",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Cease work or movement.", example: "Take a rest.", japanese: "仕事や動きをやめる" }] }
+    ]
+  },
+  "relax": {
+    word: "relax",
+    phonetic: "/rɪˈlæks/",
+    japanese: "リラックスする",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Become less tense.", example: "Relax and enjoy.", japanese: "緊張が緩む" }] }
+    ]
+  },
+  "exercise": {
+    word: "exercise",
+    phonetic: "/ˈɛksərsaɪz/",
+    japanese: "運動する、練習",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Engage in physical activity.", example: "Exercise every day.", japanese: "身体活動に従事する" }] }
+    ]
+  },
+  "practice": {
+    word: "practice",
+    phonetic: "/ˈpræktɪs/",
+    japanese: "練習する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Perform an activity repeatedly.", example: "Practice the piano.", japanese: "活動を繰り返し行う" }] }
+    ]
+  },
+  "train": {
+    word: "train",
+    phonetic: "/treɪn/",
+    japanese: "訓練する、電車",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Teach skills through practice.", example: "Train for the race.", japanese: "練習を通じてスキルを教える" }] }
+    ]
+  },
+  "type": {
+    word: "type",
+    phonetic: "/taɪp/",
+    japanese: "タイプする、種類",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Write using a keyboard.", example: "Type a message.", japanese: "キーボードを使って書く" }] }
+    ]
+  },
+  "search": {
+    word: "search",
+    phonetic: "/sɜːrtʃ/",
+    japanese: "検索する、探す",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Try to find something.", example: "Search the web.", japanese: "何かを見つけようとする" }] }
+    ]
+  },
+  "click": {
+    word: "click",
+    phonetic: "/klɪk/",
+    japanese: "クリックする",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Press a button on a mouse.", example: "Click the link.", japanese: "マウスのボタンを押す" }] }
+    ]
+  },
+  "download": {
+    word: "download",
+    phonetic: "/ˈdaʊnloʊd/",
+    japanese: "ダウンロードする",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Copy data from the internet.", example: "Download the app.", japanese: "インターネットからデータをコピーする" }] }
+    ]
+  },
+  "upload": {
+    word: "upload",
+    phonetic: "/ˈʌploʊd/",
+    japanese: "アップロードする",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Transfer data to a server.", example: "Upload your photo.", japanese: "データをサーバーに転送する" }] }
+    ]
+  },
+  "delete": {
+    word: "delete",
+    phonetic: "/dɪˈliːt/",
+    japanese: "削除する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Remove or erase.", example: "Delete the file.", japanese: "削除または消す" }] }
+    ]
+  },
+  "print": {
+    word: "print",
+    phonetic: "/prɪnt/",
+    japanese: "印刷する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Produce text or images on paper.", example: "Print the document.", japanese: "紙にテキストや画像を作成する" }] }
+    ]
+  },
+  "record": {
+    word: "record",
+    phonetic: "/rɪˈkɔːrd/",
+    japanese: "記録する、録音する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Set down in writing or other form.", example: "Record the meeting.", japanese: "書面または他の形式で記録する" }] }
+    ]
+  },
+  "edit": {
+    word: "edit",
+    phonetic: "/ˈɛdɪt/",
+    japanese: "編集する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Prepare for publication by correcting.", example: "Edit the text.", japanese: "修正して出版の準備をする" }] }
+    ]
+  },
+  "translate": {
+    word: "translate",
+    phonetic: "/trænsˈleɪt/",
+    japanese: "翻訳する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Express in another language.", example: "Translate to Japanese.", japanese: "別の言語で表現する" }] }
+    ]
+  },
+  "pronounce": {
+    word: "pronounce",
+    phonetic: "/prəˈnaʊns/",
+    japanese: "発音する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Make the sound of a word.", example: "Pronounce this word.", japanese: "単語の音を出す" }] }
+    ]
+  },
+  "spell": {
+    word: "spell",
+    phonetic: "/spɛl/",
+    japanese: "綴る",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Write or name the letters of a word.", example: "Spell your name.", japanese: "単語の文字を書くまたは言う" }] }
+    ]
+  },
+  "repeat": {
+    word: "repeat",
+    phonetic: "/rɪˈpiːt/",
+    japanese: "繰り返す",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Say or do again.", example: "Repeat after me.", japanese: "もう一度言うまたはする" }] }
+    ]
+  },
+  "describe": {
+    word: "describe",
+    phonetic: "/dɪˈskraɪb/",
+    japanese: "描写する、説明する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Give an account of.", example: "Describe the picture.", japanese: "〜について説明する" }] }
+    ]
+  },
+  "discuss": {
+    word: "discuss",
+    phonetic: "/dɪˈskʌs/",
+    japanese: "議論する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Talk about something.", example: "Discuss the plan.", japanese: "何かについて話す" }] }
+    ]
+  },
+  "solve": {
+    word: "solve",
+    phonetic: "/sɒlv/",
+    japanese: "解決する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Find an answer to.", example: "Solve the problem.", japanese: "〜への答えを見つける" }] }
+    ]
+  },
+  "complete": {
+    word: "complete",
+    phonetic: "/kəmˈpliːt/",
+    japanese: "完成する、完全な",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Finish making or doing.", example: "Complete the task.", japanese: "作るまたはすることを終える" }] }
+    ]
+  },
+  "succeed": {
+    word: "succeed",
+    phonetic: "/səkˈsiːd/",
+    japanese: "成功する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Achieve the desired result.", example: "You will succeed.", japanese: "望んだ結果を達成する" }] }
+    ]
+  },
+  "fail": {
+    word: "fail",
+    phonetic: "/feɪl/",
+    japanese: "失敗する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Be unsuccessful.", example: "Don't be afraid to fail.", japanese: "うまくいかない" }] }
+    ]
+  },
+  "focus": {
+    word: "focus",
+    phonetic: "/ˈfoʊkəs/",
+    japanese: "集中する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Concentrate attention on.", example: "Focus on your work.", japanese: "〜に注意を集中する" }] }
+    ]
+  },
+  "notice": {
+    word: "notice",
+    phonetic: "/ˈnoʊtɪs/",
+    japanese: "気づく、通知",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Become aware of.", example: "I noticed a change.", japanese: "〜に気づく" }] }
+    ]
+  },
+  "ignore": {
+    word: "ignore",
+    phonetic: "/ɪɡˈnɔːr/",
+    japanese: "無視する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Refuse to notice.", example: "Ignore the noise.", japanese: "気づくことを拒む" }] }
+    ]
+  },
+  "avoid": {
+    word: "avoid",
+    phonetic: "/əˈvɔɪd/",
+    japanese: "避ける",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Keep away from.", example: "Avoid the traffic.", japanese: "〜から離れている" }] }
+    ]
+  },
+  "face": {
+    word: "face",
+    phonetic: "/feɪs/",
+    japanese: "顔、向かう",
+    meanings: [
+      { partOfSpeech: "noun", definitions: [{ definition: "The front of the head.", example: "A smiling face.", japanese: "頭の前部" }] },
+      { partOfSpeech: "verb", definitions: [{ definition: "Confront something.", example: "Face the truth.", japanese: "何かに向き合う" }] }
+    ]
+  },
+  "handle": {
+    word: "handle",
+    phonetic: "/ˈhændl/",
+    japanese: "扱う、取っ手",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Manage a situation.", example: "Handle with care.", japanese: "状況を管理する" }] }
+    ]
+  },
+  "manage": {
+    word: "manage",
+    phonetic: "/ˈmænɪdʒ/",
+    japanese: "管理する、何とかする",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Be in charge of.", example: "Manage a team.", japanese: "〜を担当する" }] }
+    ]
+  },
+  "control": {
+    word: "control",
+    phonetic: "/kənˈtroʊl/",
+    japanese: "制御する、コントロール",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Direct the operation of.", example: "Control your emotions.", japanese: "〜の操作を指示する" }] }
+    ]
+  },
+  "protect": {
+    word: "protect",
+    phonetic: "/prəˈtɛkt/",
+    japanese: "守る、保護する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Keep safe from harm.", example: "Protect the environment.", japanese: "害から安全に保つ" }] }
+    ]
+  },
+  "prevent": {
+    word: "prevent",
+    phonetic: "/prɪˈvɛnt/",
+    japanese: "防ぐ",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Stop from happening.", example: "Prevent accidents.", japanese: "起こるのを止める" }] }
+    ]
+  },
+  "cause": {
+    word: "cause",
+    phonetic: "/kɔːz/",
+    japanese: "引き起こす、原因",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Make something happen.", example: "Cause trouble.", japanese: "何かを起こさせる" }] }
+    ]
+  },
+  "happen": {
+    word: "happen",
+    phonetic: "/ˈhæpən/",
+    japanese: "起こる",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Take place.", example: "What happened?", japanese: "起こる" }] }
+    ]
+  },
+  "exist": {
+    word: "exist",
+    phonetic: "/ɪɡˈzɪst/",
+    japanese: "存在する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Have reality or being.", example: "Does life exist on Mars?", japanese: "現実または存在を持つ" }] }
+    ]
+  },
+  "require": {
+    word: "require",
+    phonetic: "/rɪˈkwaɪər/",
+    japanese: "必要とする",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Need for a purpose.", example: "This requires patience.", japanese: "目的のために必要とする" }] }
+    ]
+  },
+  "depend": {
+    word: "depend",
+    phonetic: "/dɪˈpɛnd/",
+    japanese: "依存する、次第である",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Rely on.", example: "It depends on the weather.", japanese: "〜に頼る" }] }
+    ]
+  },
+  "belong": {
+    word: "belong",
+    phonetic: "/bɪˈlɒŋ/",
+    japanese: "属する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Be a member of.", example: "I belong to this club.", japanese: "〜のメンバーである" }] }
+    ]
+  },
+  "contain": {
+    word: "contain",
+    phonetic: "/kənˈteɪn/",
+    japanese: "含む",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Have as a component.", example: "This contains sugar.", japanese: "成分として持つ" }] }
+    ]
+  },
+  "involve": {
+    word: "involve",
+    phonetic: "/ɪnˈvɒlv/",
+    japanese: "巻き込む、含む",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Include as a necessary part.", example: "This involves risk.", japanese: "必要な部分として含む" }] }
+    ]
+  },
+  "represent": {
+    word: "represent",
+    phonetic: "/ˌrɛprɪˈzɛnt/",
+    japanese: "代表する、表す",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Stand for or symbolize.", example: "This represents hope.", japanese: "〜を表すまたは象徴する" }] }
+    ]
+  },
+  "express": {
+    word: "express",
+    phonetic: "/ɪkˈsprɛs/",
+    japanese: "表現する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Convey in words or actions.", example: "Express your feelings.", japanese: "言葉や行動で伝える" }] }
+    ]
+  },
+  "introduce": {
+    word: "introduce",
+    phonetic: "/ˌɪntrəˈdjuːs/",
+    japanese: "紹介する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Present someone to another.", example: "Let me introduce myself.", japanese: "誰かを別の人に紹介する" }] }
+    ]
+  },
+  "mention": {
+    word: "mention",
+    phonetic: "/ˈmɛnʃən/",
+    japanese: "言及する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Refer to briefly.", example: "Don't mention it.", japanese: "簡単に言及する" }] }
+    ]
+  },
+  "suggest": {
+    word: "suggest",
+    phonetic: "/səˈdʒɛst/",
+    japanese: "提案する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Put forward for consideration.", example: "I suggest we leave.", japanese: "検討のために提出する" }] }
+    ]
+  },
+  "recommend": {
+    word: "recommend",
+    phonetic: "/ˌrɛkəˈmɛnd/",
+    japanese: "勧める",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Suggest as suitable.", example: "I recommend this book.", japanese: "適切だと提案する" }] }
+    ]
+  },
+  "promise": {
+    word: "promise",
+    phonetic: "/ˈprɒmɪs/",
+    japanese: "約束する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Assure that something will happen.", example: "I promise to help.", japanese: "何かが起こることを保証する" }] }
+    ]
+  },
+  "confirm": {
+    word: "confirm",
+    phonetic: "/kənˈfɜːrm/",
+    japanese: "確認する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Establish the truth of.", example: "Confirm your booking.", japanese: "真実を確立する" }] }
+    ]
+  },
+  "prove": {
+    word: "prove",
+    phonetic: "/pruːv/",
+    japanese: "証明する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Demonstrate the truth of.", example: "Prove your point.", japanese: "真実を示す" }] }
+    ]
+  },
+  "suppose": {
+    word: "suppose",
+    phonetic: "/səˈpoʊz/",
+    japanese: "思う、仮定する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Assume that something is true.", example: "I suppose so.", japanese: "何かが真実だと仮定する" }] }
+    ]
+  },
+  "wonder": {
+    word: "wonder",
+    phonetic: "/ˈwʌndər/",
+    japanese: "不思議に思う",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Feel curious about.", example: "I wonder why.", japanese: "〜について好奇心を感じる" }] }
+    ]
+  },
+  "realize": {
+    word: "realize",
+    phonetic: "/ˈriːəlaɪz/",
+    japanese: "気づく、実現する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Become fully aware of.", example: "I realized my mistake.", japanese: "十分に気づく" }] }
+    ]
+  },
+  "recognize": {
+    word: "recognize",
+    phonetic: "/ˈrɛkəɡnaɪz/",
+    japanese: "認識する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Identify from previous experience.", example: "I recognize that face.", japanese: "以前の経験から識別する" }] }
+    ]
+  },
+  "consider": {
+    word: "consider",
+    phonetic: "/kənˈsɪdər/",
+    japanese: "考慮する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Think carefully about.", example: "Consider your options.", japanese: "〜について慎重に考える" }] }
+    ]
+  },
+  "assume": {
+    word: "assume",
+    phonetic: "/əˈsjuːm/",
+    japanese: "仮定する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Suppose to be true without proof.", example: "I assume you agree.", japanese: "証拠なしに真実だと仮定する" }] }
+    ]
+  },
+  "imagine": {
+    word: "imagine",
+    phonetic: "/ɪˈmædʒɪn/",
+    japanese: "想像する",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Form a mental image of.", example: "Imagine a better world.", japanese: "〜の心象を形成する" }] }
+    ]
+  },
+  "dream": {
+    word: "dream",
+    phonetic: "/driːm/",
+    japanese: "夢を見る、夢",
+    meanings: [
+      { partOfSpeech: "verb", definitions: [{ definition: "Experience images while sleeping.", example: "I dream of success.", japanese: "睡眠中にイメージを経験する" }] }
+    ]
   }
 };

@@ -363,7 +363,25 @@ async function searchWord(word) {
             }
 
             const data = await response.json();
-            displayResult(data[0], false);
+            // オフライン辞書から日本語訳を追加
+            const result = data[0];
+            if (typeof OFFLINE_DICTIONARY !== 'undefined' && OFFLINE_DICTIONARY[cleanWord]) {
+                const offlineData = OFFLINE_DICTIONARY[cleanWord];
+                result.japanese = offlineData.japanese;
+                // 各定義にも日本語を追加
+                if (offlineData.meanings) {
+                    result.meanings.forEach((meaning, mIndex) => {
+                        if (offlineData.meanings[mIndex]) {
+                            meaning.definitions.forEach((def, dIndex) => {
+                                if (offlineData.meanings[mIndex].definitions[dIndex]) {
+                                    def.japanese = offlineData.meanings[mIndex].definitions[dIndex].japanese;
+                                }
+                            });
+                        }
+                    });
+                }
+            }
+            displayResult(result, false);
         } catch (error) {
             console.error('Fetch error:', error);
             showError('ネットワークエラー。オフライン辞書の単語をお試しください。');
