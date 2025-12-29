@@ -20,21 +20,35 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    height: -webkit-fill-available;
 }
 
 body {
-    font-family: 'Inter', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
     background: var(--bg);
     color: var(--text);
     min-height: 100vh;
+    min-height: -webkit-fill-available;
     line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    touch-action: manipulation;
 }
 
 .app {
     max-width: 700px;
     margin: 0 auto;
     padding: 20px;
+    padding-top: max(20px, env(safe-area-inset-top));
+    padding-bottom: max(20px, env(safe-area-inset-bottom));
+    padding-left: max(20px, env(safe-area-inset-left));
+    padding-right: max(20px, env(safe-area-inset-right));
     min-height: 100vh;
+    min-height: -webkit-fill-available;
     display: flex;
     flex-direction: column;
 }
@@ -179,6 +193,8 @@ h1 {
 .search-btn {
     width: 56px;
     height: 56px;
+    min-width: 56px;
+    min-height: 56px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -188,12 +204,20 @@ h1 {
     color: white;
     cursor: pointer;
     transition: all 0.2s ease;
+    -webkit-touch-callout: none;
+    user-select: none;
 }
 
-.search-btn:hover {
+.search-btn:hover,
+.search-btn:active {
     background: var(--primary-dark);
     border-color: var(--primary-dark);
-    transform: scale(1.05);
+}
+
+@media (hover: hover) {
+    .search-btn:hover {
+        transform: scale(1.05);
+    }
 }
 
 .search-btn svg {
@@ -205,6 +229,8 @@ h1 {
 .voice-btn {
     width: 56px;
     height: 56px;
+    min-width: 56px;
+    min-height: 56px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -216,9 +242,12 @@ h1 {
     transition: all 0.2s ease;
     position: relative;
     overflow: hidden;
+    -webkit-touch-callout: none;
+    user-select: none;
 }
 
-.voice-btn:hover {
+.voice-btn:hover,
+.voice-btn:active {
     background: var(--bg-input);
     color: var(--text);
     border-color: var(--primary);
@@ -345,25 +374,34 @@ h1 {
     display: flex;
     align-items: center;
     gap: 6px;
-    padding: 8px 16px;
+    padding: 12px 20px;
     background: var(--primary);
     color: white;
     border: none;
     border-radius: 24px;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     font-weight: 500;
     cursor: pointer;
     transition: all 0.2s;
+    -webkit-touch-callout: none;
+    user-select: none;
+    min-height: 44px;
 }
 
-.play-audio:hover {
+.play-audio:hover,
+.play-audio:active {
     background: var(--primary-dark);
-    transform: scale(1.05);
+}
+
+@media (hover: hover) {
+    .play-audio:hover {
+        transform: scale(1.05);
+    }
 }
 
 .play-audio svg {
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
 }
 
 /* Japanese Translation (Main) */
@@ -509,10 +547,12 @@ h1 {
 @media (max-width: 600px) {
     .app {
         padding: 16px;
+        padding-top: max(16px, env(safe-area-inset-top));
+        padding-bottom: max(16px, env(safe-area-inset-bottom));
     }
 
     .header {
-        padding: 24px 0 20px;
+        padding: 20px 0 16px;
     }
 
     h1 {
@@ -526,16 +566,23 @@ h1 {
 
     .search-container {
         flex-wrap: wrap;
+        gap: 10px;
     }
 
     .search-box {
         width: 100%;
     }
 
+    #wordInput {
+        font-size: 16px; /* Prevents iOS zoom on focus */
+        padding: 14px 44px 14px 48px;
+    }
+
     .search-btn,
     .voice-btn {
         flex: 1;
         height: 52px;
+        min-height: 52px;
     }
 
     .result {
@@ -543,11 +590,30 @@ h1 {
     }
 
     .word-title {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 
     .word-header {
-        gap: 12px;
+        gap: 10px;
+    }
+
+    .play-audio {
+        padding: 10px 16px;
+        font-size: 0.85rem;
+    }
+
+    .japanese-main {
+        font-size: 1.1rem;
+        padding: 10px 14px;
+    }
+
+    .definition {
+        padding: 14px 16px;
+    }
+
+    .definition-japanese {
+        padding-left: 24px;
+        font-size: 0.9rem;
     }
 }
 

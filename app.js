@@ -15,6 +15,11 @@ let isListening = false;
 let voicesLoaded = false;
 let availableVoices = [];
 
+// iOS検出
+const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
 // オンライン/オフライン状態を監視
 function updateOnlineStatus() {
     if (navigator.onLine) {
@@ -40,47 +45,56 @@ if (!navigator.onLine) {
 // 音声リストを読み込む
 function loadVoices() {
     return new Promise((resolve) => {
+        const getVoicesAndResolve = () => {
+            availableVoices = speechSynthesis.getVoices();
+            voicesLoaded = availableVoices.length > 0;
+            resolve(availableVoices);
+        };
+
         availableVoices = speechSynthesis.getVoices();
         if (availableVoices.length > 0) {
             voicesLoaded = true;
             resolve(availableVoices);
         } else {
             // 音声が非同期で読み込まれる場合
-            speechSynthesis.onvoiceschanged = () => {
-                availableVoices = speechSynthesis.getVoices();
-                voicesLoaded = true;
-                resolve(availableVoices);
-            };
-            // タイムアウト: 1秒後に強制的に続行
-            setTimeout(() => {
-                availableVoices = speechSynthesis.getVoices();
-                voicesLoaded = true;
-                resolve(availableVoices);
-            }, 1000);
+            if (speechSynthesis.onvoiceschanged !== undefined) {
+                speechSynthesis.onvoiceschanged = getVoicesAndResolve;
+            }
+            // タイムアウト: 2秒後に強制的に続行（iOSは遅いことがある）
+            setTimeout(getVoicesAndResolve, 2000);
         }
     });
 }
 
 // アメリカ英語の音声を選択
 function selectUSVoice(voices) {
+    if (!voices || voices.length === 0) return null;
+
+    // iOS用の音声を優先
+    if (isIOS) {
+        let iosVoice = voices.find(v => v.name.includes('Samantha'));
+        if (iosVoice) return iosVoice;
+        iosVoice = voices.find(v => v.lang === 'en-US' && v.localService);
+        if (iosVoice) return iosVoice;
+    }
+
     // 優先順位: en-US > en_US > en（アメリカ英語を優先）
     let selectedVoice = voices.find(v => v.lang === 'en-US');
     if (!selectedVoice) {
         selectedVoice = voices.find(v => v.lang === 'en_US');
     }
     if (!selectedVoice) {
-        selectedVoice = voices.find(v => v.lang.startsWith('en-US'));
+        selectedVoice = voices.find(v => v.lang && v.lang.startsWith('en-US'));
     }
     if (!selectedVoice) {
-        // Samantha (macOS) や Google US English などを探す
         selectedVoice = voices.find(v =>
-            v.name.includes('Samantha') ||
+            v.name && (v.name.includes('Samantha') ||
             v.name.includes('US') ||
-            v.name.includes('American')
+            v.name.includes('American'))
         );
     }
     if (!selectedVoice) {
-        selectedVoice = voices.find(v => v.lang.startsWith('en'));
+        selectedVoice = voices.find(v => v.lang && v.lang.startsWith('en'));
     }
     return selectedVoice;
 }
@@ -88,11 +102,12 @@ function selectUSVoice(voices) {
 // Text-to-Speech で発音する（アメリカ英語）
 async function speakWord(word) {
     if (!('speechSynthesis' in window)) {
-        console.log('Speech synthesis not supported');
+        voiceStatus.textContent = 'Speech not supported';
+        setTimeout(() => voiceStatus.textContent = '', 2000);
         return;
     }
 
-    // 既存の発話をキャンセル
+    // iOS Safari: 発話前にキャンセルが必要
     speechSynthesis.cancel();
 
     // 音声がまだ読み込まれていない場合は待つ
@@ -102,8 +117,9 @@ async function speakWord(word) {
 
     const utterance = new SpeechSynthesisUtterance(word);
     utterance.lang = 'en-US';
-    utterance.rate = 0.85;
+    utterance.rate = isIOS ? 0.9 : 0.85;
     utterance.pitch = 1;
+    utterance.volume = 1;
 
     // 音声を選択
     const selectedVoice = selectUSVoice(availableVoices);
@@ -111,75 +127,109 @@ async function speakWord(word) {
         utterance.voice = selectedVoice;
     }
 
-    // iOS Safari対策: 少し遅延を入れる
+    // エラーハンドリング
+    utterance.onerror = (e) => {
+        console.error('Speech error:', e);
+    };
+
+    // iOS Safari対策: 遅延を入れる
     setTimeout(() => {
         speechSynthesis.speak(utterance);
-    }, 100);
+    }, isIOS ? 200 : 100);
 }
 
 // ページ読み込み時に音声を事前読み込み
 if ('speechSynthesis' in window) {
     loadVoices();
+    // iOSでは追加のトリガーが必要な場合がある
+    document.addEventListener('touchstart', () => {
+        if (!voicesLoaded) loadVoices();
+    }, { once: true });
+}
+
+// 音声認識のサポートチェック
+function isSpeechRecognitionSupported() {
+    return 'webkitSpeechRecognition' in window || 'SpeechRecognition' in window;
 }
 
 // Web Speech APIのサポートチェックと初期化
 function initSpeechRecognition() {
-    if (!('webkitSpeechRecognition' in window) && !('SpeechRecognition' in window)) {
+    if (!isSpeechRecognitionSupported()) {
         console.log('Speech Recognition not supported');
-        voiceBtn.title = 'Voice input not supported';
+        updateVoiceButtonState(false);
         return false;
     }
 
-    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-    recognition = new SpeechRecognition();
-    recognition.lang = 'en-US';
-    recognition.continuous = false;
-    recognition.interimResults = true;
-    recognition.maxAlternatives = 1;
+    try {
+        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+        recognition = new SpeechRecognition();
+        recognition.lang = 'en-US';
+        recognition.continuous = false;
+        recognition.interimResults = !isIOS; // iOSでは中間結果を無効化
+        recognition.maxAlternatives = 1;
 
-    recognition.onstart = () => {
-        isListening = true;
-        voiceBtn.classList.add('listening');
-        voiceStatus.textContent = 'Listening... Speak a word';
-    };
+        recognition.onstart = () => {
+            isListening = true;
+            voiceBtn.classList.add('listening');
+            voiceStatus.textContent = 'Listening... Speak a word';
+        };
 
-    recognition.onresult = (event) => {
-        const transcript = event.results[0][0].transcript;
-        wordInput.value = transcript;
+        recognition.onresult = (event) => {
+            const transcript = event.results[0][0].transcript;
+            wordInput.value = transcript;
 
-        if (event.results[0].isFinal) {
-            voiceStatus.textContent = `Recognized: "${transcript}"`;
+            if (event.results[0].isFinal) {
+                voiceStatus.textContent = `Recognized: "${transcript}"`;
+                setTimeout(() => {
+                    searchWord(transcript.trim());
+                    voiceStatus.textContent = '';
+                }, 500);
+            }
+        };
+
+        recognition.onerror = (event) => {
+            console.error('Speech recognition error:', event.error);
+            voiceStatus.textContent = getErrorMessage(event.error);
+            stopListening();
             setTimeout(() => {
-                searchWord(transcript.trim());
                 voiceStatus.textContent = '';
-            }, 500);
-        }
-    };
+            }, 3000);
+        };
 
-    recognition.onerror = (event) => {
-        console.error('Speech recognition error:', event.error);
-        voiceStatus.textContent = getErrorMessage(event.error);
-        stopListening();
-        setTimeout(() => {
-            voiceStatus.textContent = '';
-        }, 3000);
-    };
+        recognition.onend = () => {
+            stopListening();
+        };
 
-    recognition.onend = () => {
-        stopListening();
-    };
+        recognition.onnomatch = () => {
+            voiceStatus.textContent = 'Could not recognize. Try again.';
+            stopListening();
+            setTimeout(() => voiceStatus.textContent = '', 3000);
+        };
 
-    return true;
+        return true;
+    } catch (e) {
+        console.error('Failed to init speech recognition:', e);
+        updateVoiceButtonState(false);
+        return false;
+    }
+}
+
+function updateVoiceButtonState(supported) {
+    if (!supported) {
+        voiceBtn.style.opacity = '0.5';
+        voiceBtn.title = 'Voice input not supported on this device';
+    }
 }
 
 function getErrorMessage(error) {
     const messages = {
         'no-speech': 'No speech detected. Try again.',
         'audio-capture': 'Microphone not found.',
-        'not-allowed': 'Microphone access denied.',
+        'not-allowed': 'Microphone access denied. Please allow in Settings.',
         'network': 'Network error. Voice needs internet.',
         'aborted': 'Voice input stopped.',
-        'service-not-allowed': 'Speech service not available.'
+        'service-not-allowed': 'Speech service not available.',
+        'language-not-supported': 'Language not supported.'
     };
     return messages[error] || 'Voice error. Try typing instead.';
 }
@@ -190,12 +240,29 @@ function stopListening() {
 }
 
 function startListening() {
+    // HTTPSチェック（localhost以外）
+    if (location.protocol !== 'https:' && location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
+        voiceStatus.textContent = 'Voice requires HTTPS connection';
+        setTimeout(() => voiceStatus.textContent = '', 3000);
+        return;
+    }
+
     if (!recognition) {
         if (!initSpeechRecognition()) {
-            voiceStatus.textContent = 'Voice not supported. Please type.';
+            voiceStatus.textContent = isIOS ?
+                'Voice not supported on this iOS version' :
+                'Voice not supported. Please type.';
             setTimeout(() => voiceStatus.textContent = '', 3000);
             return;
         }
+    }
+
+    // 既に認識中なら停止
+    if (isListening) {
+        try {
+            recognition.stop();
+        } catch (e) {}
+        return;
     }
 
     try {
@@ -203,8 +270,18 @@ function startListening() {
         recognition.start();
     } catch (e) {
         console.error('Start error:', e);
-        if (e.message && e.message.includes('already started')) {
-            recognition.stop();
+        if (e.name === 'InvalidStateError' || (e.message && e.message.includes('already started'))) {
+            try {
+                recognition.stop();
+            } catch (stopError) {}
+            setTimeout(() => {
+                try {
+                    recognition.start();
+                } catch (retryError) {
+                    voiceStatus.textContent = 'Could not start voice. Try again.';
+                    setTimeout(() => voiceStatus.textContent = '', 3000);
+                }
+            }, 200);
         } else {
             voiceStatus.textContent = 'Could not start voice. Try typing.';
             setTimeout(() => voiceStatus.textContent = '', 3000);
@@ -212,14 +289,23 @@ function startListening() {
     }
 }
 
-// 音声入力ボタンのクリックイベント
-voiceBtn.addEventListener('click', () => {
+// 音声入力ボタンのイベント（clickとtouchendの両方に対応）
+function handleVoiceButtonPress(e) {
+    e.preventDefault();
     if (isListening) {
-        recognition?.stop();
+        try {
+            recognition?.stop();
+        } catch (e) {}
     } else {
         startListening();
     }
-});
+}
+
+voiceBtn.addEventListener('click', handleVoiceButtonPress);
+// iOSではtouchendも追加
+if (isIOS) {
+    voiceBtn.addEventListener('touchend', handleVoiceButtonPress);
+}
 
 // 検索ボタンのクリックイベント
 searchBtn.addEventListener('click', () => {
@@ -402,4 +488,12 @@ function translatePartOfSpeech(pos) {
 }
 
 // 初期化
-initSpeechRecognition();
+if (isSpeechRecognitionSupported()) {
+    initSpeechRecognition();
+} else {
+    updateVoiceButtonState(false);
+    if (isIOS) {
+        voiceStatus.textContent = 'Voice input requires iOS 14.5+';
+        setTimeout(() => voiceStatus.textContent = '', 5000);
+    }
+}
